@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Get multiple subreddits in separate, customizable lanes" />
+		<title>Browser-based Reddit Client</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<header> <p>You are welcome to our browser-based Reddit client that displays multiple subreddits. </p></header>
+		<main>
+			<section class="container">
+				<div class="action-btn">
+					<button class="refresh">Refresh</button>
+					<button class="delete">Delete All</button>
+				</div>
+				<div>
+					<button id="addSubreddit" class="add-subreddit"> + </button>
+					
+						<form id="form" class="form">
+							<button class="close-btn" id="closeButton">X</button>
+							<label for="subreddit">Enter the subreddit name here:</label>
+							<input class="form-inp" id="input" type="text" name="subreddit" />
+							<button class="form-btn" id="addSubredditButton">Add subreddit</button>
+						</form>
+				</div>
+				<div class="lane-wrapper" id="laneWrapper">
+					
+				</div>
+			</section>
+		</main>
+		<footer></footer>
+		<script src="app.js"></script>
+	</body>
+</html>
